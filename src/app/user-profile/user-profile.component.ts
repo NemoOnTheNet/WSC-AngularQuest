@@ -8,7 +8,7 @@ import { User } from '../Interface/user';
 })
 export class UserProfileComponent {
   user: User = {
-    name: 'Doe',
+    name: 'Delafon',
     firstName: 'John',
     age: 25,
     quote: '',
@@ -16,6 +16,8 @@ export class UserProfileComponent {
   };
 
   isHidden: boolean = true;
+
+  isAdmin: boolean = true;
 
   showAlert(): void {
     this.isHidden = !this.isHidden
